@@ -11,7 +11,7 @@ const [results, setResults] = useState(null);
     const handleSubmit = async (code, user) => {
 
         console.log(code, user.username)
-        const response = await fetch('http://54.193.70.142/runCode', {
+        const response = await fetch('https://cs218-finalbackend.vercel.app/runCode', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ code: code, user: user.username })
