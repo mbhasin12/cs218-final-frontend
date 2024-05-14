@@ -90,6 +90,11 @@ const [highScore, setHighScore] = useState(null);
                             <p style={{ color: 'red' }}>
                                 {results.results[0]}
                             </p>
+
+                            {results.results[1] && (
+                                    <p style={{ color: 'red' }}>
+                                        {results.results[1]}
+                                    </p>)}
                         </div>
                     )}
                 </div>
